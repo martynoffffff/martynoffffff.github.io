@@ -14,7 +14,7 @@ $db = Mysql::create("localhost", "id11009594_bot", "Nikita2004")->setDatabaseNam
 
 const VK_KEY = "767e71d3834c2e7e8d3edb4e552da06f4677934a50616df56fd26dbc98613a1e251dfa7e8d8fc322de305";  // токен сообщества
 const ACCESS_KEY = "03a24d35";  // ключ сообщества
-const VERSION = "5.92"; // версия API вконтакте
+const VERSION = "5.81"; // версия API вконтакте
 
 
 
@@ -63,14 +63,7 @@ if ($data->type == 'message_new') { // Если это новое сообщен
 
 ///////////////////////////////////////// сложные команды /////////////////////////////////////////
 
-  if (mb_substr($message,0,5) == 'пх'){
 
-if ($reply_author == ''){
-    
-}else{
-  $vk->sendMessage($peer_id, $reply_author);
-
-}
 
 
 
@@ -1223,7 +1216,7 @@ if ($message == 'Сука') {
    
 
         
-
+}
 ///////////////////////////////////////// не готовое /////////////////////////////////////////        
         
         
@@ -1262,5 +1255,5 @@ if ($message == 'Сука') {
 
 //}
 //}   
-}
+
 	
